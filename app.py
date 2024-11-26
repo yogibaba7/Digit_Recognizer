@@ -71,11 +71,11 @@ if input_option == "Draw Digit":
     if canvas.image_data is not None:
         # Convert canvas image to PIL format
         canvas_image = Image.fromarray((canvas.image_data[:, :, 0]).astype(np.uint8))
-        st.image(canvas_image, caption="Drawn Digit", width=140)
+        # st.image(canvas_image, caption="Drawn Digit", width=140)
 
-        # Preprocess the image
+        # # Preprocess the image
         processed_image = preprocess_image(canvas_image)
-        st.image(processed_image.reshape(28, 28), caption="Preprocessed Image", width=140)
+        # st.image(processed_image.reshape(28, 28), caption="Preprocessed Image", width=140)
 
         # Apply PCA
         processed_image_pca = pca.transform([processed_image])
