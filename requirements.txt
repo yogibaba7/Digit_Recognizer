@@ -5,3 +5,4 @@ scikit-learn
 joblib
 scipy
 pandas
+streamlit-drawable-canvas
