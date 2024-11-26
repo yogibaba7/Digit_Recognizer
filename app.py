@@ -90,11 +90,11 @@ elif input_option == "Upload Image":
     if uploaded_file is not None:
         # Open the uploaded image
         uploaded_image = Image.open(uploaded_file)
-        st.image(uploaded_image, caption="Uploaded Image", width=140)
+        #st.image(uploaded_image, caption="Uploaded Image", width=140)
 
         # Preprocess the image
         processed_image = preprocess_image(uploaded_image)
-        st.image(processed_image.reshape(28, 28), caption="Preprocessed Image", width=140)
+        #st.image(processed_image.reshape(28, 28), caption="Preprocessed Image", width=140)
 
         # Apply PCA
         processed_image_pca = pca.transform([processed_image])
